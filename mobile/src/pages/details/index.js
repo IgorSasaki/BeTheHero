@@ -21,13 +21,13 @@ export default function Details() {
     function sendEmail() {
         MailComposer.composeAsync({
             subject: 'Herói do caso: Cadelinha Atropelada',
-            recipients: ['igor-sasaki@hotmail.com'],
+            recipients: ['email'],
             body: message
         })
     }
 
     function sendWhatsapp() {
-        Linking.openURL(`whatsapp://send?phone=+5516997537490&text=${message}`)
+        Linking.openURL(`whatsapp://send?phone=+55telefone&text=${message}`)
     }
 
     return (
