@@ -14,12 +14,6 @@ export default function Logon() {
 
     const history = useHistory();
 
-    function handleID(event) {
-        let id = event.target.value;
-
-        this.setState({ id })
-    }
-
     async function handleLogin(event) {
         event.preventDefault();
 
